@@ -6,6 +6,8 @@ on:
 jobs:
   build-push:
     runs-on: ubuntu-latest
+    permissions:
+      packages: write
     steps:
       - uses: actions/checkout@v2
       # https://github.com/marketplace/actions/push-to-ghcr
